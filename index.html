@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zsaron's Projects</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    min-height: 100vh;
+    background: #0c0b17;
+    color: #fff;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    padding: 56px 24px 40px;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    font-weight: 900;
+    letter-spacing: -2px;
+    background: linear-gradient(135deg, #ffe030 0%, #ff6b35 50%, #ff2299 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  header p {
+    margin-top: 12px;
+    color: rgba(255,255,255,0.38);
+    font-size: 0.95rem;
+    letter-spacing: 0.05em;
+  }
+
+  .dirs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    width: 100%;
+    max-width: 860px;
+    padding: 0 24px 72px;
+  }
+
+  @media (max-width: 600px) {
+    .dirs { grid-template-columns: 1fr; }
+  }
+
+  .dir {
+    background: rgba(255,255,255,0.035);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dir-header {
+    padding: 28px 28px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .dir-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+
+  .dir-games .dir-icon { background: rgba(255,224,48,0.15); }
+  .dir-other .dir-icon { background: rgba(160,130,255,0.15); }
+
+  .dir-header h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.3px;
+  }
+
+  .dir-header .count {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.3);
+    font-weight: 500;
+    margin-top: 2px;
+  }
+
+  .dir-items {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.15s, transform 0.12s;
+  }
+
+  .item:hover {
+    background: rgba(255,255,255,0.07);
+    transform: translateX(2px);
+  }
+
+  .item-icon {
+    font-size: 1.6rem;
+    line-height: 1;
+    width: 36px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .item-info { flex: 1; min-width: 0; }
+
+  .item-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .item-desc {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.38);
+    margin-top: 2px;
+  }
+
+  .item-arrow {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.2);
+    flex-shrink: 0;
+  }
+
+  .item:hover .item-arrow { color: rgba(255,255,255,0.55); }
+
+  .empty {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 16px;
+    color: rgba(255,255,255,0.2);
+    font-size: 0.85rem;
+    text-align: center;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Zsaron's Projects</h1>
+  <p>Games &amp; other things</p>
+</header>
+
+<div class="dirs">
+
+  <!-- Games -->
+  <div class="dir dir-games">
+    <div class="dir-header">
+      <div class="dir-icon">🎮</div>
+      <div>
+        <h2>Games</h2>
+        <div class="count">1 project</div>
+      </div>
+    </div>
+    <div class="dir-items">
+      <a class="item" href="games/jumping-cat.html">
+        <div class="item-icon">🐱</div>
+        <div class="item-info">
+          <div class="item-title">Jumping Cat</div>
+          <div class="item-desc">Platformer · 9 levels · boss fight</div>
+        </div>
+        <div class="item-arrow">›</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Other Projects -->
+  <div class="dir dir-other">
+    <div class="dir-header">
+      <div class="dir-icon">📁</div>
+      <div>
+        <h2>Other Projects</h2>
+        <div class="count">0 projects</div>
+      </div>
+    </div>
+    <div class="dir-items">
+      <div class="empty">Nothing here yet —<br>check back soon.</div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
