@@ -1,214 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zsaron's Projects</title>
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  body {
-    min-height: 100vh;
-    background: #0c0b17;
-    color: #fff;
-    font-family: 'Segoe UI', system-ui, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header {
-    padding: 56px 24px 40px;
-    text-align: center;
-  }
-
-  header h1 {
-    font-size: clamp(2.2rem, 6vw, 4rem);
-    font-weight: 900;
-    letter-spacing: -2px;
-    background: linear-gradient(135deg, #ffe030 0%, #ff6b35 50%, #ff2299 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  header p {
-    margin-top: 12px;
-    color: rgba(255,255,255,0.38);
-    font-size: 0.95rem;
-    letter-spacing: 0.05em;
-  }
-
-  .dirs {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    width: 100%;
-    max-width: 860px;
-    padding: 0 24px 72px;
-  }
-
-  @media (max-width: 600px) {
-    .dirs { grid-template-columns: 1fr; }
-  }
-
-  .dir {
-    background: rgba(255,255,255,0.035);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 20px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .dir-header {
-    padding: 28px 28px 20px;
-    border-bottom: 1px solid rgba(255,255,255,0.07);
-    display: flex;
-    align-items: center;
-    gap: 14px;
-  }
-
-  .dir-icon {
-    width: 44px;
-    height: 44px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    flex-shrink: 0;
-  }
-
-  .dir-games .dir-icon { background: rgba(255,224,48,0.15); }
-  .dir-other .dir-icon { background: rgba(160,130,255,0.15); }
-
-  .dir-header h2 {
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: -0.3px;
-  }
-
-  .dir-header .count {
-    font-size: 0.75rem;
-    color: rgba(255,255,255,0.3);
-    font-weight: 500;
-    margin-top: 2px;
-  }
-
-  .dir-items {
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    flex: 1;
-  }
-
-  .item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 14px;
-    border-radius: 12px;
-    text-decoration: none;
-    color: inherit;
-    transition: background 0.15s, transform 0.12s;
-  }
-
-  .item:hover {
-    background: rgba(255,255,255,0.07);
-    transform: translateX(2px);
-  }
-
-  .item-icon {
-    font-size: 1.6rem;
-    line-height: 1;
-    width: 36px;
-    text-align: center;
-    flex-shrink: 0;
-  }
-
-  .item-info { flex: 1; min-width: 0; }
-
-  .item-title {
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: #fff;
-  }
-
-  .item-desc {
-    font-size: 0.78rem;
-    color: rgba(255,255,255,0.38);
-    margin-top: 2px;
-  }
-
-  .item-arrow {
-    font-size: 0.85rem;
-    color: rgba(255,255,255,0.2);
-    flex-shrink: 0;
-  }
-
-  .item:hover .item-arrow { color: rgba(255,255,255,0.55); }
-
-  .empty {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 32px 16px;
-    color: rgba(255,255,255,0.2);
-    font-size: 0.85rem;
-    text-align: center;
-    line-height: 1.6;
-  }
-</style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    body {background-color: #0b0a12}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 11.4px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.38); -webkit-text-stroke: rgba(255, 255, 255, 0.38)}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px '.Apple Color Emoji UI'; color: #ffffff; -webkit-text-stroke: #ffffff}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px '.SF NS'; color: #ffffff; color: rgba(255, 255, 255, 0.3); -webkit-text-stroke: rgba(255, 255, 255, 0.3)}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 19.2px '.Apple Color Emoji UI'; color: #ffffff; -webkit-text-stroke: #ffffff}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.4px '.SF NS'; color: #ffffff; -webkit-text-stroke: #ffffff}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.4px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.38); -webkit-text-stroke: rgba(255, 255, 255, 0.38)}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.2px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.2); -webkit-text-stroke: rgba(255, 255, 255, 0.2)}
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.2px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.2); -webkit-text-stroke: rgba(255, 255, 255, 0.2); background-color: #ffffff; background-color: rgba(255, 255, 255, 0.035)}
+    span.s1 {font-kerning: none; background-color: #0b0a12}
+    span.s2 {font-kerning: none; background-color: rgba(254, 220, 38, 0.15)}
+    span.s3 {font-kerning: none; background-color: rgba(255, 255, 255, 0.035)}
+    span.s4 {font: 19.2px '.Apple Color Emoji UI'; font-kerning: none}
+    span.s5 {font: 11.4px '.SF NS'; font-kerning: none}
+    span.s6 {font: 9.4px 'Helvetica Neue'; font-kerning: none; color: rgba(255, 255, 255, 0.38); -webkit-text-stroke: 0px rgba(255, 255, 255, 0.38)}
+    span.s7 {font: 10.2px 'Helvetica Neue'; font-kerning: none; color: rgba(255, 255, 255, 0.2); -webkit-text-stroke: 0px rgba(255, 255, 255, 0.2)}
+    span.s8 {font-kerning: none; background-color: rgba(142, 103, 255, 0.15)}
+    span.s9 {font-kerning: none}
+  </style>
 </head>
 <body>
-
-<header>
-  <h1>Zsaron's Projects</h1>
-  <p>Games &amp; other things</p>
-</header>
-
-<div class="dirs">
-
-  <!-- Games -->
-  <div class="dir dir-games">
-    <div class="dir-header">
-      <div class="dir-icon">🎮</div>
-      <div>
-        <h2>Games</h2>
-        <div class="count">1 project</div>
-      </div>
-    </div>
-    <div class="dir-items">
-      <a class="item" href="games/jumping-cat.html">
-        <div class="item-icon">🐱</div>
-        <div class="item-info">
-          <div class="item-title">Jumping Cat</div>
-          <div class="item-desc">Platformer · 9 levels · boss fight</div>
-        </div>
-        <div class="item-arrow">›</div>
-      </a>
-    </div>
-  </div>
-
-  <!-- Other Projects -->
-  <div class="dir dir-other">
-    <div class="dir-header">
-      <div class="dir-icon">📁</div>
-      <div>
-        <h2>Other Projects</h2>
-        <div class="count">0 projects</div>
-      </div>
-    </div>
-    <div class="dir-items">
-      <div class="empty">Nothing here yet —<br>check back soon.</div>
-    </div>
-  </div>
-
-</div>
-
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 48.0px '.SF NS'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s1"><b>Iggy’s Projects</b><b></b></span></h1>
+<p class="p2"><span class="s1">Games &amp; other things</span></p>
+<p class="p3"><span class="s2">🎮</span></p>
+<h2 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 13.8px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s3"><b>Games</b><b></b></span></h2>
+<p class="p5"><span class="s3">1 project</span></p>
+<p class="p6"><span class="s3"><a href="file:///Users/dj/jumpingcat/games/jumping-cat.html">🐱<span class="s4"></span></a></span></p>
+<p class="p7"><span class="s3"><a href="file:///Users/dj/jumpingcat/games/jumping-cat.html"><b>Jumping Cat</b><span class="s5"><b></b></span></a></span></p>
+<p class="p8"><span class="s3"><a href="file:///Users/dj/jumpingcat/games/jumping-cat.html">Platformer · 9 levels · boss fight<span class="s6"></span></a></span></p>
+<p class="p9"><span class="s3"><a href="file:///Users/dj/jumpingcat/games/jumping-cat.html">›<span class="s7"></span></a></span></p>
+<p class="p3"><span class="s8">📁</span></p>
+<h2 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 13.8px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s3"><b>Other Projects</b><b></b></span></h2>
+<p class="p5"><span class="s3">0 projects</span></p>
+<p class="p9"><span class="s3">Nothing here yet —</span></p>
+<p class="p10"><span class="s9">check back soon.</span></p>
 </body>
 </html>
